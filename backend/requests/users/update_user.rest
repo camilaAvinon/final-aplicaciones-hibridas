@@ -1,0 +1,8 @@
+PUT http://localhost:3000/myblog/users/65df26125735a531a9d0d545
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZGU1NTkxNjNhNmM5MzgxYzMwNTRhYSIsImVtYWlsIjoiY2FtaWxhQG1haWwuY29tIiwiaWF0IjoxNzA5MTIxNzAzfQ.bUdZ_QVkpu7R7I38_v5dNylS9SP9wxMmIwUFg9nIDms
+
+{
+    "name": "Carmen",
+    "email": 20
+}

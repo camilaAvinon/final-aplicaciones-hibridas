@@ -1,0 +1,9 @@
+PUT http://localhost:3000/myblog/posts/65df26fa015bcc95d022d2e9
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZGU1NTkxNjNhNmM5MzgxYzMwNTRhYSIsImVtYWlsIjoiY2FtaWxhQG1haWwuY29tIiwiaWF0IjoxNzA5MTIxNzAzfQ.bUdZ_QVkpu7R7I38_v5dNylS9SP9wxMmIwUFg9nIDms
+
+{
+    "title": "aaa",
+    "body": 3,
+    "category": "65d49b2bce25d5326d5a24ea"
+}

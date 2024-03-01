@@ -1,0 +1,7 @@
+POST http://localhost:3000/myblog/users/authentication
+Content-Type: application/json
+
+{
+    "email": "camila@gmail.com",
+    "password": "123"
+}

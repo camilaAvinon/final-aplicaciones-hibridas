@@ -1,0 +1,1 @@
+GET http://localhost:3000/myblog/comments/65de02c4445121649fd96288
