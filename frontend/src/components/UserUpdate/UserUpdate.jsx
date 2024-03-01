@@ -12,9 +12,8 @@ const UserUpdate = () => {
     const [email, setEmail] = useState('')
     const [error, setError] = useState(null)
     const id = JSON.parse(window.localStorage.getItem('loggedUser')).id
-    const {token} = JSON.parse(window.localStorage.getItem('loggedUser')).token
+    const token = JSON.parse(window.localStorage.getItem('loggedUser')).token
     const navigate = useNavigate()
-
     useEffect( () => {
         getUser(id)
         .then (user => {
@@ -24,7 +23,7 @@ const UserUpdate = () => {
         })
     }, [])
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
         setError(null)
         try {
@@ -87,5 +86,6 @@ const UserUpdate = () => {
         )
     }
 }
+
 
 export default UserUpdate

@@ -15,6 +15,9 @@ import UpdateUser from './views/UpdateUser/UpdateUser.jsx'
 import DeleteUser from './views/DeleteUser/DeleteUser.jsx'
 import DeleteComment from './views/DeleteComment/DeleteComment.jsx'
 import UpdateComment from './views/UpdateComment/UpdateComment.jsx'
+import CreateCategory from './views/CreateCategory/CreateCategory.jsx'
+import DeleteCategory from './views/DeleteCategory/DeleteCategory.jsx'
+import UpdateCategory from './views/UpdateCategory/UpdateCategory.jsx'
 
 
 const router = createBrowserRouter([
@@ -66,6 +69,18 @@ const router = createBrowserRouter([
   {
     path: '/comments/:id/edit',
     element: <UpdateComment/>
+  },
+  {
+    path: '/category/create',
+    element: <CreateCategory/>
+  },
+  {
+    path: '/category/:id/delete',
+    element: <DeleteCategory/>
+  },
+  {
+    path: '/category/:id/edit',
+    element: <UpdateCategory/>
   }
 ])
 

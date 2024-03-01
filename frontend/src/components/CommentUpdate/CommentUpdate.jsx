@@ -10,6 +10,7 @@ const CommentUpdate = ({id}) => {
     const [error, setError] = useState(null)
     const user = JSON.parse(window.localStorage.getItem('loggedUser'))
     const navigate = useNavigate()
+    
     useEffect ( () => {
         getComment(id.id)
         .then( comment => {

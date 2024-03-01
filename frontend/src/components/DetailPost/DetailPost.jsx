@@ -15,11 +15,10 @@ const DetailPost = ({id}) => {
 
   if (!post) {
     return (
-    <>
       <div className="alert alert-info" role="alert">
         Obteniendo datos del servidor
       </div>
-    </>)
+    )
   } else {
     return (
       <>

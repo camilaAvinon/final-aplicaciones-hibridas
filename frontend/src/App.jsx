@@ -36,7 +36,11 @@ function App() {
       <>
       <Nav/>
       <PostList posts={posts}/>
-      <Link to='/posts/create' className='btn btn-info rounded position-fixed bottom-0 end-0 m-4'>Crear posteo</Link>
+      <div className='position-fixed bottom-0 end-0 m-4'>
+      <Link to='/category/create' className='btn btn-outline-info rounded mx-2'>Crear categoría</Link>
+      <Link to='/posts/create' className='btn btn-info rounded mx-2'>Crear posteo</Link>
+      </div>
+      
     </>
 
     )

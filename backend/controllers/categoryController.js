@@ -5,7 +5,7 @@ exports.create = async (req, res, next)=> {
     try {
         const {name} = req.body;
         if (!name){
-            res.status(400).json({error: 'Fields are missing'});
+            res.status(401).json({error: 'Fields are missing'});
         } else if (typeof name !== 'string'){
             res.status(403).json({error: 'Invalid data'});
         } else {
